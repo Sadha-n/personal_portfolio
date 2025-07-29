@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadha N - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sadha N</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link"> Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="images/Sadha-resume.pdf" download class="nav-resume">Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="profile-photo">
+                    <img src="images/photo.jpg" alt="Sadha N" class="profile-img">
+                </div>
+                <h1 class="home-title">Sadha N</h1>
+                <h1 class="len">Welcome to My Portfolio</h1>
+                 <p>I'm a <span class="highlight">passionate Software Developer</span>  and passionate about building web apps.</p>
+                <div class="social-links">
+                    <!-- <a href="mailto:nsadha92@gmail.com" class="social-link" title="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a> -->
+                    <a
+                        href="mailto:nsadha92@gmail.com"
+                        class="social-link"
+                        title="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/Sadha-n" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sadha-n-20785a343/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('about')">Learn More About Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        
+            <div class="about-box">
+                  <h2>About Me</h2>
+                  <p>
+                     💻 I have a strong interest in <span class="highlight">building modern, user-friendly websites</span> that blend functionality with design. From clean layouts to interactive elements, I enjoy transforming concepts into impactful digital experiences.
+                 </p>
+                 <p>
+                   🤝 I thrive in <span class="highlight">collaborative team environments</span> where ideas are shared, challenges are tackled together, and growth happens naturally. I believe communication and empathy are key to successful teamwork.
+                 </p>
+                 <p>
+                   🌟 Known for my <span class="highlight">positive mindset, adaptability, and curiosity</span>, I bring energy, focus, and continuous learning into every project I work on.
+                  </p>
+                   <a href="images/Sadha-resume.pdf" download class="resume-button">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-globe"></i>
+                        Web Technologies
+                    </h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools
+                    </h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Browser Developer Tools(Inspect Element)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                           Designed and developed the front end of an interactive e-commerce platform using HTML and CSS, focusing on clean UI/UX design and responsive layouts. The site includes product listings, navigation menus, and user-friendly styling. JavaScript and SQL were used to demonstrate future dynamic behavior and backend data handling, though my primary contribution was building the full front-end interface from scratch.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-label">Tech Used:</span>
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">Javascript</span>
+                            <span class="tech-item">Sql</span>
+                          
+                        </div>
+                        <!-- <a href="https://github.com/sadhan/ecommerce-platform" target="_blank" class="project-button">
+                            View Project
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/aivirtual_assistent.jpg" alt="AI-virtual Assistent">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Virtual Assistant</h3>
+                        </h3>
+                        <p class="project-description">
+                           Developed a feature-rich AI Virtual Assistant using Python, designed to interact with users via voice commands. The assistant performs a wide range of daily tasks by integrating multiple Python libraries and APIs to enhance productivity and user convenience.
+
+                       Key Features:🎬 Play YouTube Videos via voice prompts
+                       🕒 Tell current Time & Date🌐 Open popular websites like Google, YouTube, etc.📚 Fetch information from Wikipedia summaries⏰ Set Alarms and Reminders😂 Tell Jokes for user engagement🧠 Mini Games: Number Guessing & Rock-Paper-Scissors📋 Voice-Based Task Execution for hands-free control       
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-label">Tech Used:</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">pyttsx3 (Text-to-Speech)</span>
+                            <span class="tech-item">SpeechRecognition</span>
+        
+                         
+                        </div>
+                        <a href="https://github.com/Sadha-n/AI_Virtual_Assistant" target="_blank" class="project-button">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/studysync.png" alt="study sync">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Study-Sync</h3>
+                        <p class="project-description">
+                          StudySync is a responsive and visually engaging education platform landing page developed using HTML and CSS. It offers a smooth and modern user experience through dynamic layouts, subtle animations, and mobile-friendly design. The website features a responsive navigation bar with a mobile menu, an impactful hero section with a bold headline, and a trusted companies section that showcases popular brand logos. Testimonials from educators and parents add credibility and social media icons.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-label">Tech Used:</span>
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS3</span>
+                        </div>
+                        <a href="https://github.com/Sadha-n/study-sync-landing-page" target="_blank" class="project-button">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/student-registration.jpg" alt="Student Registration System">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Registration System with Email Confirmation</h3>
+                        <p class="project-description">
+                          This project is a basic Student Registration System that allows users to register by submitting their name, USN, and email through a simple HTML form. Upon form submission, the data is sent to a Node.js backend server, which then uses Nodemailer to send a confirmation email to the registered user.
+                      
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-label">Tech Used:</span>
+                            <span class="tech-label">HTML (Form UI)</span>
+                            <span class="tech-item">CSS (Styling)</span>
+                            <span class="tech-item">Node.js (Backend)</span>
+                            <span class="tech-item">Node.js (Backend)</span>
+                            <span class="tech-item">Nodemailer (Email Service)</span>
+                        </div>
+                        <a href="" target="_blank" class="project-button">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/portfolio.png" alt="portfolio">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-description">
+                           This is a fully responsive and visually appealing Personal Portfolio Website developed using HTML, CSS, and JavaScript. It serves as a digital resume, showcasing my skills, projects, and achievements in a structured and modern layout. The site includes smooth animations, interactive elements, and a clean UI that adapts seamlessly across devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-label">Tech Used:</span>
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JavaScript</span>
+                        
+                        </div>
+                        <a href="" target="_blank" class="project-button">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3 class="contact-title">Let's Connect!</h3>
+                    </div>
+                    <p class="contact-description">
+                        I'd love to hear from you! Whether it's a project, job opportunity or just a hello — 
+                        feel free to drop a message.
+                    </p>
+                    <div class="social-links">
+                        <a
+                        href="mailto:nsadha92@gmail.com"
+                        class="social-link"
+                        title="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                        <a href="https://github.com/Sadha-n" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                           </a>
+                         <a href="https://www.linkedin.com/in/sadha-n-20785a343/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                       </a>
+                    </div>
+                    <p class="contact-cta">Let's build something great together!</p>
+                    
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" action="http://localhost:3000/register" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sadha N. Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ >
