@@ -6,6 +6,8 @@
     <title>Sadha N - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Add EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -68,13 +70,13 @@
             <div class="about-box">
                   <h2>About Me</h2>
                   <p>
-                     💻 I have a strong interest in <span class="highlight">building modern, user-friendly websites</span> that blend functionality with design. From clean layouts to interactive elements, I enjoy transforming concepts into impactful digital experiences.
+                     I have a strong interest in <span class="highlight">building modern, user-friendly websites</span> that blend functionality with design. From clean layouts to interactive elements, I enjoy transforming concepts into impactful digital experiences.
                  </p>
                  <p>
-                   🤝 I thrive in <span class="highlight">collaborative team environments</span> where ideas are shared, challenges are tackled together, and growth happens naturally. I believe communication and empathy are key to successful teamwork.
+                   I thrive in <span class="highlight">collaborative team environments</span> where ideas are shared, challenges are tackled together, and growth happens naturally. I believe communication and empathy are key to successful teamwork.
                  </p>
                  <p>
-                   🌟 Known for my <span class="highlight">positive mindset, adaptability, and curiosity</span>, I bring energy, focus, and continuous learning into every project I work on.
+                     Known for my <span class="highlight">positive mindset, adaptability, and curiosity</span>, I bring energy, focus, and continuous learning into every project I work on.
                   </p>
                    <a href="images/Sadha-resume.pdf" download class="resume-button">
                         <i class="fas fa-download"></i>
@@ -143,19 +145,23 @@
                     <div class="project-content">
                         <h3 class="project-title">E-Commerce Platform</h3>
                         <p class="project-description">
-                           Designed and developed the front end of an interactive e-commerce platform using HTML and CSS, focusing on clean UI/UX design and responsive layouts. The site includes product listings, navigation menus, and user-friendly styling. JavaScript and SQL were used to demonstrate future dynamic behavior and backend data handling, though my primary contribution was building the full front-end interface from scratch.
+                          Developed a full-stack e-commerce platform with secure JWT-based vendor authentication and role-based authorization.
+
+Engineered a scalable MongoDB schema to manage complex data relationships between vendors, firms, and products.
+
+Built RESTful API endpoints supporting complete CRUD operations for seamless product and firm management.
+
+Integrated error handling, input validation, and middleware for robust backend functionality.
                         </p>
                         <div class="project-tech">
                             <span class="tech-label">Tech Used:</span>
-                            <span class="tech-item">HTML</span>
-                            <span class="tech-item">CSS</span>
-                            <span class="tech-item">Javascript</span>
-                            <span class="tech-item">Sql</span>
+                            <span class="tech-item">MERN</span>
+                            
                           
                         </div>
-                        <!-- <a href="https://github.com/sadhan/ecommerce-platform" target="_blank" class="project-button">
+                        <a href="https://github.com/Sadha-n/Suby_Backend_Nodejs" target="_blank" class="project-button">
                             View Project
-                        </a> -->
+                        </a>
                     </div>
                 </div>
 
@@ -224,13 +230,11 @@
                             <span class="tech-item">Node.js (Backend)</span>
                             <span class="tech-item">Nodemailer (Email Service)</span>
                         </div>
-                        <a href="" target="_blank" class="project-button">
-                            View Project
-                        </a>
+                       
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="project-image">
                         <img src="images/portfolio.png" alt="portfolio">
                     </div>
@@ -250,7 +254,7 @@
                             View Project
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -286,14 +290,14 @@
                     <p class="contact-cta">Let's build something great together!</p>
                     
                     <!-- Contact Form -->
-                    <form class="contact-form" id="contactForm" action="http://localhost:3000/register" method="POST">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="user_name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="user_email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -319,5 +323,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
- >

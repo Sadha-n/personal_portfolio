@@ -64,15 +64,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Contact form handling
+// Initialize EmailJS
+(function() {
+    emailjs.init("xtQ5zLYAs9jD2W_ec");
+})();
+
+// Contact form handling with EmailJS
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
     // Get form data
     const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
+    const name = formData.get('user_name');
+    const email = formData.get('user_email');
     const message = formData.get('message');
     
     // Simple form validation
@@ -88,20 +93,36 @@ contactForm.addEventListener('submit', (e) => {
         return;
     }
     
-    // Simulate form submission
+    // Update button state
     const submitButton = contactForm.querySelector('.form-submit');
     const originalText = submitButton.innerHTML;
     
     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitButton.disabled = true;
     
-    // Simulate API call
-    setTimeout(() => {
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        contactForm.reset();
-        submitButton.innerHTML = originalText;
-        submitButton.disabled = false;
-    }, 2000);
+    // EmailJS parameters
+    const templateParams = {
+        user_name: name,
+        user_email: email,
+        message: message,
+        to_email: 'nsadha92@gmail.com' // Your email address
+    };
+    
+    // Send email using EmailJS
+    emailjs.send('service_ewky8nq', 'bo07305', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            contactForm.reset();
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Sorry, there was an error sending your message. Please try again or contact me directly at nsadha92@gmail.com');
+        })
+        .finally(function() {
+            // Reset button state
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
 });
 
 // Add smooth hover effects for project cards
